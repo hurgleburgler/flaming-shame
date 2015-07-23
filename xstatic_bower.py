@@ -150,7 +150,7 @@ def main():
     underline = '-' * len('xstatic-' + display_name)
     homepage = bower_json['homepage']
     if 'main' in bower_json:
-        main = "MAIN='{}'".format(bower_json['main'])
+        main = "MAIN=\"{}\"".format(bower_json['main'])
     else:
         main = ''
     keywords = ' '.join(bower_json.get('keywords', []) + [name, 'xstatic'])
